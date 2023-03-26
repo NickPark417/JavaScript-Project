@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises | GainGuide</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="exercise.js" defer></script>
+    <script src="https://kit.fontawesome.com/77ac71d6d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav__wrapper">
+        <img src="/assets/gym_img" alt="" class="nav__img">
+        <nav>
+            <figure>
+                <img src="/assets/logo-white.png" class="logo">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link exercises__link">
+                    <a href="/index.html" class="exercises__link--anchor link__hover-effect">Home</a>
+                </li>
+                <li class="nav__link">
+                    <a href="/exercises.html" class="exercises__link--anchor link__hover-effect">Exercises</a>
+                </li>
+                <li class="nav__link">
+                    <a class="exercises__link--anchor">
+                        <button class="exercises__link--button click">Contact</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="search__title">Browse exercises</h1>
+        <div class="search-bar__wrapper">
+            <input type="text" class="search-bar" onchange="onSearchChange(event)"></input>
+            <i class="fa-solid fa-magnifying-glass click"></i>
+        </div>
+    </div>
+    <section id="exercises">
+        <div class="container">
+            <div class="row">
+                <i class="fas fa-spinner"></i>
+                <h2 class="search__results">Search results:</h2>
+                <div class="exercises__container">
+                    <div class="exercise">
+                        <figure class="img__wrapper">
+                            <img src="" alt="" class="exercise__img">
+                        </figure>
+                        <div class="exercise__info--conatiner">
+                            <h3 class="exercise__name"></h3>
+                            <h4 class="exercise__category"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
